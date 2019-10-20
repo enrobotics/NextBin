@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 
-
 <html>
 	<head>
 		<title>NextBin</title>
@@ -13,9 +12,7 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-
         @yield('content')
-
 			</div>
 
 
