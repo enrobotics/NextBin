@@ -1,4 +1,4 @@
-<!-- Banner -->
+<!-- Menu Banner -->
   <section id="menu" class="banner style1 orient-center content-align-center  fullscreen onload-image-fade-in onload-content-fade-right">
     <div class="content" >
       <h1 class="logo title" >NextBin</h1>

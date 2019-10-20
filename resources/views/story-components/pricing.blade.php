@@ -1,4 +1,4 @@
-<!-- Spotlight -->
+<!-- Spotlight - Pricing -->
   <section id="pricing" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
     <div class="content">
       <h2>Pricing.</h2>

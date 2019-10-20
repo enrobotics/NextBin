@@ -1,5 +1,5 @@
 
-<!-- Gallery -->
+<!-- Farmers - Gallery -->
 <section id="farms" class="wrapper style1 align-center">
 	<div class="inner" >
 		<h2>Farms</h2>
@@ -9,7 +9,7 @@
 
 			This helps reduce green house gas, and supports healthy land management
 			practices without using imported chemical fertilizers.
-			
+
 		</br>Nature has developed the perfect recycling system, let us use it!
 			</br></br>Are you a farmer?
 		</br><a href="#">Join</a> the NextBin Farm Alliance.

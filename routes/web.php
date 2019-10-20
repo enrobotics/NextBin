@@ -23,10 +23,7 @@ Route::get('{type}/signup', function () {
     return view('signup');
 })->name('signup');
 
-
-
-
-
+//Developer Tool
 Route::get('/ui-dev', function () {
     return view('ui-dev');
 });

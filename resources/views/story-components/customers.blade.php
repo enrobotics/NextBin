@@ -1,5 +1,5 @@
 
-<!-- Gallery -->
+<!-- Customers - Gallery -->
 <section id="farms" class="wrapper style1 align-center">
 	<div class="inner" >
 		<h2>Customers</h2>

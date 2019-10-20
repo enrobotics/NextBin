@@ -1,4 +1,4 @@
-<!-- Spotlight -->
+<!-- Spotlight - How Next Bin works. -->
   <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
     <div class="content">
       <h2>How <span class="logo">NextBin</span> works.</h2>
