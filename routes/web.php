@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('index-demo');
 });
 
-/*Route::get('/login', function () {
-    return view('signin');
-})->name('login');*/
 
 Route::get('{type}/signup', function () {
     return view('signup');
