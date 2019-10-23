@@ -24,3 +24,9 @@ Route::get('{type}/signup', function () {
 Route::get('/ui-dev', function () {
     return view('ui-dev');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware(['auth']);
+
+Route::get('/profile', 'HomeController@profile')->name('profile')->middleware(['auth']);

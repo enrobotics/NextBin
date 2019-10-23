@@ -74,7 +74,7 @@ a:active {
 	border-bottom: none;
 	border-left: 1px solid #3a3a3a;
 	box-shadow: 1px 3px 0 1px #cccccc;
-	height: 50px;
+	height: 20px;
 	margin: -40px -40px 40px -40px;
 	padding: 0;
 }
@@ -357,7 +357,7 @@ a:active {
 		left: 0;
 		position: fixed;
 		right: 0;
-		top: 0;
+		top: 0px;
 		z-index: 99;
 	}
 
@@ -1413,7 +1413,10 @@ html.fixed .visible-xl-inline-block {
 
 .header .logo {
 	float: left;
-	margin: 10px 0 0 15px;
+	margin: 20px 0 0 15px;
+	font-family: 'Nunito', sans-serif;
+	font-size:3em;
+
 }
 
 .header .logo img {
@@ -2460,11 +2463,11 @@ ul.nav-main li .nav-children .nav-children .nav-children li a {
 	box-sizing: content-box;
 	display: inline-block;
 	float: left;
-	height: 50px;
+	height: 10px;
 	font-size: 20px;
 	font-size: 2rem;
 	letter-spacing: normal;
-	line-height: 50px;
+	line-height: 10px;
 	margin: 0 0 0 -1px;
 	padding: 0 22px 0 20px;
 }
@@ -2476,7 +2479,7 @@ ul.nav-main li .nav-children .nav-children .nav-children li a {
 .page-header .breadcrumbs {
 	display: inline-block;
 	font-size: 0;
-	line-height: 50px;
+	line-height: 10px;
 	margin: 0;
 	padding: 0;
 }
