@@ -6,7 +6,7 @@
 		<p style="padding-left:65px;padding-right:65px;">
 			Sign up today and have your company featured in our customer list.
 		</p>
-		<a class="button small" href="/customer/signup">Signup Now.</a>
+		<a class="button small" href="/customer/signup">Get Started</a>
 
 	</div>
 

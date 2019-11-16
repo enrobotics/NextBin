@@ -1,7 +1,7 @@
 <header class="header">
   <div class="logo-container">
     <span class="logo">
-      <logo >NextBin</logo>
+      <logo >{{ config('app.name', 'NextBin') }}</logo>
     </span>
     <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
       <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -20,11 +20,13 @@
       </div>
     </form>-->
 
+
+    <!-- Notifications
     <span class="separator"></span>
+
 
     <ul class="notifications">
 
-      
 
 
       <li>
@@ -35,7 +37,7 @@
 
         <div class="dropdown-menu notification-menu">
           <div class="notification-title">
-            <span class="pull-right label label-default">3</span>
+            <span class="pull-right label label-default">1</span>
             Alerts
           </div>
 
@@ -44,31 +46,13 @@
               <li>
                 <a href="#" class="clearfix">
                   <div class="image">
-                    <i class="fa fa-thumbs-down bg-danger"></i>
+                    <i class="fa fa-thumbs-down bg-success"></i>
                   </div>
-                  <span class="title">Server is Down!</span>
+                  <span class="title">Welcome to {{ config('app.name', 'NextBin') }} </span>
                   <span class="message">Just now</span>
                 </a>
               </li>
-              <li>
-                <a href="#" class="clearfix">
-                  <div class="image">
-                    <i class="fa fa-lock bg-warning"></i>
-                  </div>
-                  <span class="title">User Locked</span>
-                  <span class="message">15 minutes ago</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="clearfix">
-                  <div class="image">
-                    <i class="fa fa-signal bg-success"></i>
-                  </div>
-                  <span class="title">Connection Restaured</span>
-                  <span class="message">10/10/2014</span>
-                </a>
-              </li>
-            </ul>
+
 
             <hr />
 
@@ -81,6 +65,7 @@
 
 
     </ul>
+    -->
 
     <span class="separator"></span>
 
@@ -90,8 +75,8 @@
           <img src="/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="/images/!logged-user.jpg" />
         </figure>
         <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
-          <span class="name">John Doe Junior</span>
-          <span class="role">administrator</span>
+          <span class="name">Karl Strauss</span>
+          <span class="role">San Diego</span>
         </div>
 
         <i class="fa custom-caret"></i>
@@ -101,13 +86,19 @@
         <ul class="list-unstyled">
           <li class="divider"></li>
           <li>
-            <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+            <a role="menuitem" tabindex="-1" href="/profile"><i class="fa fa-user"></i> My Profile</a>
           </li>
+
           <li>
-            <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
-          </li>
-          <li>
-            <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+            <a role="menuitem" tabindex="-1" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();"
+                             ><i class="fa fa-power-off"></i> {{ __('Logout') }}</a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+
           </li>
         </ul>
       </div>

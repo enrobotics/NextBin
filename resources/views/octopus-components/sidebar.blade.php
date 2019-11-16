@@ -14,7 +14,7 @@
       <nav id="menu" class="nav-main" role="navigation">
         <ul class="nav nav-main">
           <li>
-            <a href="index.html">
+            <a href="/profile">
               <i class="fa fa-home" aria-hidden="true"></i>
               <span>Profile</span>
             </a>
@@ -22,46 +22,53 @@
 
           <li>
 
-            <a href="mailbox-folder.html">
+            <a href="/customer-support">
               <span class="pull-right label label-primary">0</span>
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>Mailbox</span>
+              <span>Customer Support</span>
             </a>
           </li>
 
           <li class="nav-parent nav-expanded nav-active">
             <a>
-              <i class="fa fa-copy" aria-hidden="true"></i>
-              <span>Manage Orders</span>
+              <i class="fa fa-support" aria-hidden="true"></i>
+              <span>Manage Your Service</span>
             </a>
             <ul class="nav nav-children">
+              <!--
               <li>
                 <a href="pages-signup.html">
                    Payments
                 </a>
               </li>
+            -->
+              <li>
+                <a href="/billing-history">
+                   Billing History
+                </a>
+              </li>
 
+              <!--
               <li>
-                <a href="pages-signin.html">
-                   Invoices
-                </a>
-              </li>
-              <li>
-                <a href="pages-recover-password.html">
-                   Increase Service
-                </a>
-              </li>
-              <li>
-                <a href="pages-recover-password.html">
+                <a href="/customer-support">
                    Customer Support
                 </a>
               </li>
 
+
               <li>
-                <a href="pages-lock-screen.html">
+                <a href="pages-recover-password.html">
+                   Update Service
+                </a>
+              </li>
+              -->
+
+              <li>
+                <a href="/customer-support/cancelation">
                    Cancel Service
                 </a>
               </li>
+
 
             </ul>
           </li>

@@ -12,9 +12,9 @@
 
 		</br>Nature has developed the perfect recycling system, let us use it!
 			</br></br>Are you a farmer?
-		</br><a href="#">Join</a> the NextBin Farm Alliance.
+		</br><a href="#">Join</a> the {{ config('app.name', 'NextBin') }} Farm Alliance.
 		</p>
-		<a class="button small" href="/farmer/signup">Signup Now.</a>
+		<a class="button small" href="/farmer/signup">Coming Soon.</a>
 
 	</div>
 

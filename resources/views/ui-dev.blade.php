@@ -8,7 +8,7 @@
 
 	@include('story-components.about')
 
-	@include('story-components.how-nextbin-works')
+	@include('story-components.how-our-service-works')
 
 	@include('story-components.pricing')
 

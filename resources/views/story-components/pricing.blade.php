@@ -7,14 +7,14 @@
           Only pay for what you use.
           <ul>
             <li>
-              $85 per month covers the cost of 8 <logo>NextBin</logo>s.
+              $95 per month covers the cost of 8 <logo>{{ config('app.name', 'NextBin') }}</logo>s.
             </li>
 
             <li>
-             Pay $2.00 for each addtional <logo>NextBin</logo> you fill.
+             Pay $2.00 for each addtional <logo>{{ config('app.name', 'NextBin') }}</logo> you fill.
            </li>
            <li>
-             Purchase up to 280 <logo>NextBin</logo>s for your onsite food waste management.
+             Purchase up to 280 <logo>{{ config('app.name', 'NextBin') }}</logo>s for your onsite food waste management.
            </li>
            </ul>
         </li>
@@ -28,7 +28,7 @@
         </li>
       </ul>
       <ul class="actions stacked">
-        <li><a href="/customer/signup" class="button">Signup Now.</a></li>
+        <li><a href="/get-started" class="button">Signup Now.</a></li>
       </ul>
     </div>
     <div class="image">

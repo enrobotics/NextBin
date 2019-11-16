@@ -23,11 +23,30 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('dashboard.new-user-wizard');
     }
 
     public function profile()
     {
-        return view('dashboard.user-profile');
+        return view('dashboard.new-user-wizard');
     }
+
+    public function mail()
+    {
+        return view('dashboard.mail');
+    }
+
+    public function billingHistory()
+    {
+        return view('dashboard.billing-history');
+    }
+
+    public function cancelService(){
+
+      return view('dashboard.cancel-service');
+
+    }
+
+
+
 }

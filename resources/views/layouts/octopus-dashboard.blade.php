@@ -1,14 +1,15 @@
 <!doctype html>
 <html class="fixed sidebar-left-collapsed">
+
 	<head>
 
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>NextBin</title>
-		<meta name="keywords" content="NextBin" />
-		<meta name="description" content="NextBin - Table to Farm food waste collection">
-		<meta name="author" content="NextBin.org">
+		<title>{{ config('app.name', 'NextBin') }}</title>
+		<meta name="keywords" content="{{ config('app.name', 'NextBin') }}" />
+		<meta name="description" content="{{ config('app.name', 'NextBin') }} - Table to Farm food waste collection">
+		<meta name="author" content="{{ config('app.name', 'NextBin') }}.org">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -21,6 +22,9 @@
 		<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		@yield('page-specific-styles')
+
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="/stylesheets/theme.css" />
@@ -43,20 +47,18 @@
 			<!-- end: header -->
 
 			<div class="inner-wrapper">
+
 				<!-- start: sidebar -->
 				@include('octopus-components.sidebar')
 				<!-- end: sidebar -->
 
 				<section role="main" class="content-body">
-					<header class="page-header">
-
-					</header>
+					<header class="page-header"></header>
 
 					<!-- start: page -->
-
           @yield('content')
-
 					<!-- end: page -->
+
 				</section>
 			</div>
 
@@ -82,6 +84,9 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="/javascripts/theme.init.js"></script>
+
+		@yield('page-specific-scripts')
+
 
 	</body>
 </html>
